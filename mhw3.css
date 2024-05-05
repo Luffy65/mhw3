@@ -1,0 +1,1888 @@
+/* Se il dispositivo ha larghezza massima 500px, allora gli impostiamo queste caratteristiche. */
+@media (max-width: 500px) {
+    article {
+      margin: 0 2px;
+    }
+
+    /* Le classi che sono impostate a 1080px di larghezza le imposto a 500px */
+    .sotto-div-header2 {
+        width: 500px;
+    }
+
+    .wrapper {
+        width: 500px;
+    }
+
+    #footer {
+        min-width: 500px;
+    }
+    
+    /* css-x4napu */
+    .footer-class1 {
+        min-width: 500px;
+    }
+
+    /* Applicato a tutti i div figli diretti di un footer-class1 */
+    .footer-class1 >div {
+        width: 500px;
+    }
+}
+
+html {
+    font-family: sans-serif;
+    background-color: #1C1C1F;
+}
+
+nav {
+    display: block;
+}
+
+body {
+    margin: 0px;
+    background-color: #1C1C1F;    
+}
+
+html, body, button, select, input, textarea, label, a, table {
+    font-family: sans-serif, system-ui, sans-serif;
+}
+
+input, select {
+    background: #fff;
+    border: none;
+    vertical-align: middle;
+}
+
+select {
+    border-radius: 0;
+    appearance: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+
+form {
+    display: block;
+    margin-top: 0em;
+}
+
+caption, .hidden {
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden; /* Quando il contenuto all'interno di un elemento di classse "hidden" esce fuori dal suo contenitore, grazie a questa proprietà la parte che fuoriesce sarà invisibile. */
+}
+
+.hidden {
+position: absolute;
+}
+
+img {
+    border: 0px;
+    vertical-align: middle;
+    max-width: 100%;
+}
+
+/* Classe di funzioni aventi tali caratteristiche. Potrei anche impostare questi valori da html, ma impostandoli con le classi in questo modo separo le responsabilità. */
+.img1 {
+    width: 16px;
+    height: 16px;
+}
+
+.img2 {
+    width: 24px;
+    height: 24px;
+}
+
+.img3 {
+    width: 65px;
+    height: 16px;
+}
+
+.img4 {
+    width: 290px;
+}
+
+.img5 {
+    width: 24px;
+    height: 21px;
+}
+
+/* Usata dall'immagine dell'elo ranked-solo */
+.img7 {
+    width: 72px;
+}
+
+.img8 {
+    width: 99px;
+    height: 24px;
+}
+
+/* Usata dall'immagine dell'elo ranked-flex */
+.img9 {
+    width: 40px;
+}
+
+/* Usata dalle icone dei champion usati di recente (a destra, stats-box)*/
+.img10 {
+    width: 24px;
+}
+
+/* usata nella parte "positions" di "stats-box" */
+.img11 {
+    width: 16px;
+}
+
+.user-icon-jpg {
+    width: 29px;
+    height: 29px;
+    margin-bottom: 5px;
+}
+
+ol, ul, li {
+    list-style: none;
+}
+
+dl, dt, dd, ol, ul, li {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+button {
+    border: 0;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+    /* background: transparent; /* Rende i button trasparenti, lo de-commenterò una volta che li avrò sistemati */
+}
+
+body, h1, h2, h3, h4, p, ol, ul, dl, dd, button {
+    margin: 0;
+    padding: 0;
+}
+
+/* __next */
+#intero-sito {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.light-mode {
+    background-color: white;
+    color: black;
+}
+  
+.dark-mode {
+    color: white;
+    background-color: #1C1C1F;
+}
+
+/* Inizio primo menù di navigazione in alto */
+
+.flexbox0 {
+    display: flex;
+    flex-direction: row;
+    height: 40px;
+    padding-left: 98px;
+    background-color: #28344E;
+    align-items: center;
+}
+
+.flexbox0 .logo {
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 98px;
+    height: 40px;
+    background-color: #5383E8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Applicato a un nav dentro un elemento di classe flexbox0 */
+.flexbox0 nav {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 1;
+}
+
+/* Applicato a liste "ul" dentro un elemento "nav" contenuto in un elemento di classe flexbox0 */
+.flexbox0 nav ul {
+    display: flex;
+    overflow: hidden;
+    height: 40px;
+}
+
+.flexbox0 nav ul li:nth-of-type(1) {
+    padding: 0 12px 0 0;
+    background-color: #5383E8;
+}
+
+/* Applicato alla scritta "league of legends" in alto a sinistra */
+/* ovvero allo span figlio diretto del primo elemento della lista ul dentro il nav dentro flexbox0*/
+.flexbox0 nav ul li:nth-of-type(1)>span {
+    color: white;
+}
+
+.flexbox0 nav ul li {
+    display: flex;
+    align-items: center;
+    height: 40px;
+}
+
+.flexbox0 nav ul li>a {
+    height: 32px;
+    line-height: 32px; /* L'abbiamo studiato */
+    margin: 4px;
+    padding: 0 8px;
+    font-weight: normal;
+}
+
+.flexbox0 nav ul li>a, .flexbox0 nav ul li>span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #C3CBD1;
+}
+
+.flexbox0 nav ul li>a>span, .flexbox0 nav ul li>span>span {
+    margin-left: 8px;
+    font-size: 12px;
+}
+
+.palworld-b {
+    display: block;
+    width: 16px;
+    height: 16px;
+    line-height: 16px;
+    border-radius: 50%;
+    font-size: 11px;
+    font-weight: bold;
+    text-align: center;
+    background-color: #FFB900;
+    color: #28344E;
+}
+
+/* Fine primo menù di navigazione - inizio barra di ricerca*/
+
+/* css-r8zyx3 */
+.div-header2 {
+    background-color: #5383E8;
+}
+
+/* css-vq1d1t */
+.sotto-div-header2 {
+    display: flex;
+    margin: 0px auto;
+    width: 1080px;
+    gap: 4px;
+}
+
+/* css-elomsb */
+.ss-div-header2 {
+    display: block;
+    width: 94px;
+    height: 46px;
+    margin-right: 21px;
+    margin-top: 2px;
+    margin-left: 9px;
+}
+
+.desktop-header .ss-div-header2 {
+    width: 124px;
+    height: auto;
+    margin: auto 0px;
+}
+
+.ss-div-header2 >div {
+    padding: 0;
+}
+
+/* css-1ljw335 */
+.sss-div-header2 {
+    padding: 8px 0px 0px;
+}
+
+.desktop-header .sss-div-header2 {
+    padding: 0px;
+}
+
+/* Immagine logo di opgg che varia ogni tot giorni */
+.desktop-header .sss-div-header2 img {
+    max-width: 100%;
+    max-height: 46px;
+}
+
+.sss-div-header2 img {
+    display: block;
+    max-width: 290px;
+    margin: 0px auto;
+    object-fit: contain; /* Il contenuto dell'immagine viene scalato per MANTENERE il suo aspect ratio originale. L'intera immagine riempie il box, senza venire "schiacciata". */
+}
+
+/* .css-1oynrk */
+.div-barra {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    margin-top: 9px;
+    margin-bottom: 7px;
+}
+
+.div-barra >div {
+    flex: 1;
+    position: relative;
+}
+
+/* .css-1f7picx */
+.form-barra {
+    background: #FFF;
+    border-radius: 4px;
+    display: flex;
+    position: relative;
+}
+
+/* .css-17f8mxo */
+.scegli-regione {
+    font-size: 12px;
+    line-height: 16px;
+    position: absolute;
+    visibility: hidden;
+}
+
+/* .css-1yy9pxr */
+.serverVisibile {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.serverVisibile>div>button {
+    height: 32px;
+    background: #ECF2FF;
+    color: #4171D6;
+    border: none;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    border-radius: 4px;
+    text-align: left;
+    box-sizing: border-box;
+    padding: 0 32px 0 12px;
+}
+
+.serverVisibile>div>button>span {
+    font-size: 12px;
+    text-overflow: inherit;
+    margin-left: 0;
+    color: #5383E8;
+    line-height: 20px;
+    display: block;
+}
+
+/* .css-yam19l */
+.custom-placeholder {
+    position: absolute;
+    left: 12px;
+    bottom: 5px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    cursor: inherit;
+    z-index: 1;
+    color: #9AA4AF;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.custom-placeholder .custom-placeholder__tagline {
+    padding: 2px 4px;
+    border-radius: 4px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #F7F7F9;
+    box-sizing: border-box;
+}
+
+/* Fine barra di ricerca - inizio pulsanti azzurri
+
+/* .css-2lihpu */
+.flexbox3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    box-sizing: border-box;
+    background-color: #5383E8;
+}
+
+.flexbox3 .route-nav {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1080px;
+}
+
+.flexbox3 .route-list {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 24px;
+}
+
+.flexbox3 .route-item:nth-of-type(1) {
+    margin-left: 0;
+}
+
+/* .css-1k8dx75 */
+.oggetto-lista-blu {
+    display: flex;
+    align-items: center;
+    color: #B3CDFF;
+    border-bottom: 3px solid transparent;
+    font-size: 15px;
+    box-sizing: border-box;
+    line-height: 22px;
+    padding: 10px 0 9px;
+}
+
+/* css-g8lvva */
+.oggetto-lista-gamemode {
+    display: flex;
+    align-items: center;
+    color: #00fede;
+    border-bottom: 3px solid transparent;
+    font-size: 15px;
+    box-sizing: border-box;
+    line-height: 22px;
+    padding: 10px 0 9px;
+}
+
+.flexbox2 span {
+    color: #B3CDFF;
+    font-size: 15px;
+    line-height: 22px;
+}
+
+/* Fine pulsanti azzurri - inizio header */
+
+header {
+    display: block;
+    background-color: #5383E8;
+    height: 5.9%;
+    color: white;
+}
+
+/* css-158fcuv */
+.evocatore-class1 {
+    position: relative;
+    background-color: #FFF;
+    background-color: #31313C;
+}
+
+/* Il div avente id "evocatore" contiene due div figli diretti posti uno sopra l'altro: sopra-evocatore1 e sotto-evocatore */
+
+/* css-1pap6km  */
+.sopra-evocatore1 {
+    position: relative;
+}
+
+.sopra-evocatore1:before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 50%;
+    margin-left: -450px;
+    width: 900px;
+    top: 0;
+    bottom: -45px;
+    background: url(https://opgg-static.akamaized.net/meta/images/lol/14.6.1/champion/centered/Kassadin_24.jpg?image=c_crop,w_1280,y_-120,x_0) no-repeat center center;
+    background-size: cover;
+    opacity: 0.4;
+    z-index: 1;
+}
+
+.sopra-evocatore1:after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 50%;
+    margin-left: -450px;
+    width: 900px;
+    top: 0;
+    bottom: -45px;
+    opacity: 1;
+    background: url(https://s-lol-web.op.gg/static/images/site/summoner/mask.svg) no-repeat center center;
+    background-size: cover;
+    z-index: 1;
+}
+
+.sopra-evocatore1:after {
+    background: url(https://s-lol-web.op.gg/static/images/site/summoner/mask_dark.svg) no-repeat center center;
+}
+
+/* Usata in luoghi diversi del sito (es: footer; header-profile-info) per fornire un wrapper flex */
+.wrapper {
+    position: relative;
+    z-index: 3 !important; /* la regola !important fa l'override di altri eventuali valori di z-index che aveva l'elemento. */
+    display: flex;
+    width: 1080px;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.wrapper .header-profile-info {
+    padding: 10px 10px 16px 0;
+    display: flex;
+    flex: 1;
+    height: 228px;
+    width: 675px;
+}
+
+/* a > b si applica a tutti gli elementi b figli diretti di a; 
+   a + b si applica all'elemento b posto SUBITO DOPO a, dove b e a hanno lo stesso genitore. */
+.wrapper >div+div {
+    display: flex;
+    align-items: center;
+}
+
+.profile-icon {
+    margin-top: 32px;
+    position: relative;
+    width: 100px;
+    height: 100px;
+    flex-basis: 100px;
+}
+
+.profile-icon img {
+    border-radius: 20px;
+    z-index: -1; /* Affinché il livello appaia sopra l'immagine */
+}
+
+.profile-icon div.level {
+    height: 20px;
+    margin-top: -11px;
+    text-align: center;
+}
+
+.profile-icon div.level span.level {
+    display: inline-block;
+    padding: 0 8px;
+    font-size: 12px;
+    border-radius: 10px;
+    color: white;
+    background-color: #202D37;
+    font-family: "Roboto", sans-serif;
+}
+
+.header-profile-info .info {
+    flex: 1;
+    margin-left: 24px;
+    box-sizing: border-box;
+}
+
+.header-profile-info .info .tier-and-cover-img {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 32px;
+}
+
+.header-profile-info .info .prev-tier {
+    position: relative;
+    display: flex;
+    font-family: "Roboto", sans-serif;
+}
+
+.header-profile-info .info .prev-tier .more-tier {
+    position: relative;
+    margin-left: 4px;
+    padding: 0 16px 0 4px;
+    font-size: 12px;
+    color: #9AA4AF;
+    color: #7B7A8E;
+    line-height: 16px;
+    font-family: "Roboto", sans-serif;
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+}
+
+.header-profile-info .info .prev-tier .more-tier:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+    width: 16px;
+    height: 16px;
+    background-image: url(https://s-lol-web.op.gg/images/icon/icon-down-small.svg);
+}
+
+/* La lista dei rank delle season precedenti. Essa diventa visibile dopo che si clicca "More Season Tier" */
+.more-tier-list {
+    position: absolute;
+    top: 20px;
+    right: 0;
+    border-radius: 4px;
+    color: #9AA4AF;
+    color: #7B7A8E;
+    background-color: #ebeef1;
+    background-color: #1C1C1F;
+    box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2);
+    font-size: 11px;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+}
+
+.more-tier-list div {
+    position: relative;
+}
+
+.NASCOSTO {
+    display: none;
+}
+
+/* Gli elementi di tale lista */
+.header-profile-info .info .prev-tier .more-tier-list li {
+    width: 90px;
+    line-height: 14px;
+    padding: 4px 12px;
+    border-bottom: 1px solid;
+    border-bottom-color: #DBE0E4;
+    border-bottom-color: var(--gray250);
+    text-transform: capitalize;
+}
+
+.header-profile-info .info>.name-container {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.header-profile-info .info>.name-container .name {
+    display: flex;
+    align-items: center;
+}
+
+/* pulsante preferiti quando non è giallo */
+/* css-1nrkspk */
+.pref-nongiallo {
+    width: 28px;
+    height: 28px;
+    border-radius: 4px;
+    border-width: 1px;
+    border-style: solid;
+    border-image: initial;
+    border-color: #424254;
+    background-color: #31313C;
+}
+
+/* pulsante preferiti quando diventa giallo */
+/* css-1ivma32 */
+.pref-giallo {
+    width: 28px;
+    height: 28px;
+    border-radius: 4px;
+    border-width: 1px;
+    border-style: solid;
+    border-image: initial;
+    border-color: #E28400;
+    background-color: #E28400;
+}
+
+.header-profile-info .info>.team-and-rank {
+    display: flex;
+    line-height: 16px;
+    margin-top: 6px;
+    color: #758592;
+    color: #9E9EB1;
+    font-size: 12px;
+}
+
+.header-profile-info .info>.buttons {
+    display: flex;
+    margin-top: 8px;
+    gap: 8px;
+}
+
+.header-profile-info .info>.last-update {
+    margin-top: 8px;
+    font-size: 12px;
+    color: #9AA4AF;
+    color: #7B7A8E;
+    width: max-content;
+}
+
+/* Inizio parte pulsanti neri */
+
+/* css-1q06rb2 */
+.sotto-evocatore {
+    position: relative;
+    z-index: 4;
+    padding: 4px 0;
+    border-top: 1px solid;
+    border-color: #ebeef1;
+    border-color: #1C1C1F;
+    height: 45px;
+}
+
+.sotto-evocatore ul {
+    position: relative;
+    display: flex;
+    width: 1080px;
+    height: 36px;
+    margin: 0 auto;
+    padding: 0;
+    font-size: 0;
+    gap: 4px;
+}
+
+/* css-az4b3p */
+.lista-uno {
+    background-color: #515163;
+    color: #FFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    min-width: 60px;
+    height: 36px;
+    line-height: 36px;
+    padding: 0 16px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    white-space: nowrap;
+}
+
+/* .css-sr75ot */
+.lista-altri {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    min-width: 60px;
+    height: 36px;
+    line-height: 36px;
+    padding: 0 16px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: normal;
+    text-decoration: none;
+    text-align: center;
+    color: #202D37;
+    color: white;
+    white-space: nowrap;
+}
+
+.lista-altri .new {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 16px;
+    height: 16px;
+    background: #EB9C00;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+/* .css-pvwmmr */
+.ListaLiveGame {
+    color: #202D37;
+    color: white;
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    border-radius: 4px;
+    min-width: 60px;
+    height: 36px;
+    padding: 0 16px;
+    font-size: 14px;
+    line-height: 36px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.ListaLiveGame span {
+    margin-left: 4px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/* .css-12n6gk8 */
+.lista-tft {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    min-width: 60px;
+    height: 36px;
+    line-height: 36px;
+    padding: 0 16px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: normal;
+    text-decoration: none;
+    text-align: center;
+    color: #202D37;
+    color: white;
+    white-space: nowrap;
+    color: #907659!important;
+}
+
+.lista-tft img {
+    margin-right: 8px;
+}
+
+/* css-vp9s1c */
+.use-op-score {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 36px;
+}
+
+.use-op-score .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 36px;
+    padding-right: 4px;
+    background-color: #34414D;
+    color: white;
+    border-radius: 18px;
+    font-size: 12px;
+}
+
+.use-op-score .header .header-info {
+    padding: 0 10px 0 16px;
+    line-height: 16px;
+}
+
+.use-op-score .header button {
+    flex-basis: 28px;
+    width: 28px;
+    height: 28px;
+    background-color: #202D37;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.use-op-score .header button img {
+    width: 24px;
+    height: 24px;
+}
+
+/* fine parte pulsanti neri */
+
+/* Generica classe per fare un blocco flex che mette gli elementi al centro */
+.flexcenter {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 1%;
+}
+
+/* Questa classe è usata per una sezione pubblicità, e sta sotto il div "evocatore" */
+.sezione {
+    background-color: #31313C;
+    height: 99px;
+    width: 85%;
+    text-align: center;
+}
+
+/* Div che contiene le informazioni principali della pagina */
+#content-container {
+    width: 85%;
+    height: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#content-container > div:nth-of-type(1) {
+    display: inline-block;
+    width: 332px;
+    font-size: 12px;
+    vertical-align: top;
+    min-height: 870px;
+}
+
+/* css-1kw4425 */
+.ranked-solo {
+    margin-top: 8px;
+    border-radius: 4px;
+    background-color: #31313C;
+    color: white;
+    font-size: 12px;
+}
+
+.ranked-solo .header {
+    display: flex;
+    justify-content: space-between;
+    line-height: 35px;
+    padding: 0px 12px;
+    font-size: 14px;
+    color: white;
+}
+
+.ranked-solo > .content {
+    display: flex;
+    align-items: center;
+    padding: 12px;
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-color: #1C1C1F;
+}
+
+.ranked-solo > .content img {
+    background-color: #282830;
+    border-radius: 50%;
+}
+
+.ranked-solo > .content .info {
+    flex: 1 1 0%;
+    position: relative;
+    margin-left: 16px;
+}
+
+.ranked-solo > .content .info .tier {
+    line-height: 26px;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: capitalize; /* Mette la prima lettera maiuscola e le altre minuscole (?) */
+    color: #FFF;
+    font-family: Roboto, sans-serif;
+}
+
+.ranked-solo > .content .info .lp {
+    line-height: 16px;
+    margin-top: 2px;
+    font-size: 12px;
+    color: #9E9EB1;
+    font-family: Roboto, sans-serif;
+}
+
+.ranked-solo > .content .win-lose-container {
+    font-size: 12px;
+    text-align: right;
+    color: #7B7A8E;
+}
+
+.ranked-solo > .content .win-lose-container .ratio {
+    margin-top: 2px;
+    line-height: 16px;
+}
+
+/* .css-1ialdhq */
+.ranked-flex {
+    margin-top: 8px;
+    border-radius: 4px;
+    background-color: #31313C;
+}
+
+.ranked-flex .header {
+    display: flex;
+    justify-content: space-between;
+    line-height: 35px;
+    padding: 0px 12px;
+    font-size: 14px;
+    color: white;
+}
+
+.ranked-flex > .content {
+    display: flex;
+    align-items: center;
+    padding: 12px;
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-color: #1C1C1F;
+}
+
+.ranked-flex>.content img {
+    background-color: #F7F7F9;
+    background-color: #282830;
+    border-radius: 50%;
+}
+
+.ranked-flex>.content .info {
+    flex: 1;
+    position: relative;
+    margin-left: 8px;
+}
+
+.ranked-flex>.content .info .tier {
+    line-height: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: capitalize;
+    color: #202D37;
+    color: white;
+    font-family: "Roboto",sans-serif;
+}
+
+.ranked-flex>.content .info .lp {
+    line-height: 16px;
+    font-size: 12px;
+    color: #758592;
+    color: #9E9EB1;
+    font-family: "Roboto",sans-serif;
+}
+
+.ranked-flex>.content .win-lose-container {
+    font-size: 12px;
+    text-align: right;
+    color: #9AA4AF;
+    color: #7B7A8E;
+}
+
+.ranked-flex>.content .win-lose-container .win-lose {
+    line-height: 20px;
+}
+
+.ranked-flex>.content .win-lose-container .ratio {
+    margin-top: 2px;
+    line-height: 16px;
+}
+
+.duo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4px 12px;
+    border-top: 1px solid;
+    border-color: #ebeef1;
+    border-color: #1C1C1F;
+    background: #F7F7F9;
+    background: #282830;
+    border-radius: 4px;
+    color: #758592;
+    color: #9E9EB1;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    margin-top: 8px;
+}
+
+.logo-duo {
+    display: flex;
+    align-items: center;
+    color: #202D37;
+    color: #FFF;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 16px;
+    margin-right: 8px;
+}
+
+/* sempre nella sezione "Duo" */
+.arrow {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-image: url(https://s-lol-web.op.gg/images/icon/icon-arrow-right-dark.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    vertical-align: top;
+}
+
+.used-champs {
+    margin-top: 8px;
+    border-radius: 4px;
+    background-color: #31313C;
+}
+
+.champs-winrate {
+    margin-top: 8px;
+    border-radius: 4px;
+    background-color: #31313C;
+}
+
+/* Zona ads 2 */
+.pubblicita {
+    margin-top: 8px;
+    min-width: 300px;
+    min-height: 250px;
+    display: flex;
+    justify-content: center;
+    max-width: 1080px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    background: #31313C;
+    border-radius: 4px;
+    padding: 8px 0px;
+}
+
+.evocatori-giocato-recente {
+    margin-top: 8px;
+    border-radius: 4px;
+    background-color: #31313C;
+}
+
+/* .css-p6fsvy */ 
+.contenuto-destra {
+    display: inline-block;
+    width: 740px;
+    margin-top: 8px;
+    margin-left: 8px;
+    font-size: 12px;
+    vertical-align: top;
+}
+
+/* .css-inknuf */
+.tipologia {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding: 4px;
+    background-color: #31313C;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom: 1px solid;
+    border-color: #1C1C1F;
+}
+
+.tipologia>ul {
+    display: flex;
+    height: 28px;
+}
+
+/* .css-4lnf5m */
+.primo-lista {
+    margin-left: 0px;
+    vertical-align: top;
+}
+
+/* css-1j5gzz7 */
+.altri-lista {
+    margin-left: 4px;
+    vertical-align: top;
+}
+
+.primo-lista button {
+    background: #515163;
+    color: #FFF;
+    display: block;
+    padding: 4px 12px;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 14px;
+    text-decoration: none;
+    box-sizing: border-box;
+    height: 28px;
+}
+
+.altri-lista button {
+    display: block;
+    padding: 4px 12px;
+    border-radius: 4px;
+    font-weight: normal;
+    font-size: 14px;
+    text-decoration: none;
+    background: #FFF;
+    background-color: #31313C;
+    color: #202D37;
+    color: white;
+    box-sizing: border-box;
+    height: 28px;
+}
+
+.altri-lista span {
+    display: inline-block;
+    line-height: 20px;
+}
+
+.altri-lista span select {
+    padding: 4px 24px 4px 12px;
+    border-radius: 4px;
+    border: 1px solid transparent;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: normal;
+    background: none;
+    outline: none;
+    line-height: 20px;
+    background: url(https://s-lol-web.op.gg/images/icon/icon-down.svg) no-repeat right center;
+    background-color: #FFF;
+    background-color: #31313C;
+    color: #202D37;
+    color: white;
+}
+
+/* .css-1l56bsk */
+.cerca-champ-nelle-partite {
+    height: 28px;
+}
+
+.cerca-champ-nelle-partite>.search {
+    position: relative;
+    width: 168px;
+    height: 17px;
+    padding: 6px 12px 5px 40px;
+    border-radius: 4px;
+    background-color: #ebeef1;
+    background-color: #1C1C1F;
+}
+
+.cerca-champ-nelle-partite>.search input {
+    display: block;
+    width: 100%;
+    color: #202D37;
+    color: white;
+    font-size: 12px;
+    border: none;
+    outline: none;
+    background-color: #ebeef1;
+    background-color: #1C1C1F;
+}
+
+.cerca-champ-nelle-partite>.search img {
+    position: absolute;
+    top: 2px;
+    left: 8px;
+    width: 24px;
+    height: 24px;
+}
+
+/* .css-1egz98l */
+.stats-box {
+    display: flex;
+    text-align: left;
+    background-color: #31313C;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    padding: 8px 12px;
+    box-sizing: border-box;
+}
+
+.stats-box .stats {
+    width: 222px;
+}
+
+.stats-box .stats .win-lose {
+    line-height: 16px;
+    font-size: 12px;
+    color: #9E9EB1;
+}
+
+.stats-box .stats .kda {
+    display: flex;
+    align-items: center;
+    margin-top: 12px;
+}
+
+.stats-box .stats .kda .chart {
+    position: relative;
+    width: 88px;
+    height: 88px;
+}
+
+.stats-box .stats .kda .chart .recharts-wrapper {
+    position: relative;
+    cursor: default;
+    width: 88px;
+    height: 88px;
+}
+
+.stats-box .stats .kda .info {
+    margin-left: 32px;
+}
+
+.stats-box .stats .kda .info .k-d-a {
+    line-height: 16px;
+    font-size: 12px;
+    color: #9E9EB1;
+    font-family: Roboto, sans-serif;
+}
+
+.stats-box .stats .kda .info .ratio {
+    margin-top: 2px;
+    line-height: 26px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    font-family: Roboto, sans-serif;
+}
+
+.stats-box .stats .kda .info .kill-participantion {
+    line-height: 16px;
+    margin-top: 2px;
+    font-size: 12px;
+    color: #E84057;
+}
+
+.stats-box .stats .kda .info .k-d-a .death {
+    color: #E84057;
+}
+
+.stats-box .champions {
+    width: 222px;
+    margin-left: 16px;
+}
+
+.stats-box .title {
+    line-height: 16px;
+    font-size: 12px;
+    color: #9E9EB1;
+}
+
+.stats-box .champions ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 88px;
+    margin-top: 12px;
+}
+
+.stats-box .champions ul li:nth-of-type(1) {
+    margin-top: 0px;
+}
+
+.stats-box .champions ul li {
+    display: flex;
+    align-items: center;
+    margin-top: 8px;
+}
+
+.stats-box .champions ul li img {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+
+.stats-box .champions ul li .win-lose {
+    font-size: 11px;
+    color: #7B7A8E;
+}
+
+/* .css-18ljion */
+.altro-kda {
+    display: inline-block;
+    font-size: 11px;
+    margin-left: 4px;
+    color: #9E9EB1;
+}
+
+/* css-6kn5on */
+.altro-wr {
+    color: #9E9EB1;
+    font-family: Roboto, sans-serif;
+}
+
+.stats-box .positions {
+    width: 222px;
+    margin-left: 16px;
+}
+
+.stats-box .positions .title {
+    line-height: 16px;
+    font-size: 12px;
+    color: #9E9EB1;
+    text-align: center;
+}
+
+.stats-box .positions ul {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 12px;
+}
+
+.stats-box .positions ul li .bar {
+    display: flex;
+    align-items: flex-end;
+    width: 16px;
+    height: 64px;
+    background-color: #424254;
+}
+
+.stats-box .positions ul li .position {
+    margin-top: 8px;
+}
+
+/* .css-1jxewmm, classe applicata al box che contiene le partite */
+.partite {
+    margin-top: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+/* .css-j7qwjs, classe applicata a una singola partita */
+.partita {
+    display: flex;
+    flex-direction: column;
+}
+
+/* css-1rppvhp */
+.contenuto-partita {
+    display: flex;
+    width: 100%;
+    min-height: 96px;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+/* css-1rppvhp.Game--Result-LOSE; definisco le seguenti variabili da usare nel caso di sconfitta */ 
+.contenuto-partita-loss {
+    --game-item-color-100: #59343B;
+    --game-item-color-200: #703C47;
+    --game-item-color-300: #703C47;
+    --game-item-color-500: #E84057;
+    --game-item-color-600: #E84057;
+    --game-item-color-200-dark: #703C47;
+}
+
+/* css-1rppvhp.Game--Result-WIN; definisco le seguenti variabili da usare nel caso di vittoria */
+.contenuto-partita-win {
+    --game-item-color-100: #28344E;
+    --game-item-color-200: #2F436E;
+    --game-item-color-300: #2F436E;
+    --game-item-color-500: #5383E8;
+    --game-item-color-600: #5383E8;
+    --game-item-color-200-dark: #2F436E;
+}
+
+.contenuto-partita .deco {
+    min-width: 6px;
+    width: 6px;
+    background-color: var(--game-item-color-500);
+}
+
+.header-profile-info .info .prev-tier .tier-list {
+    display: flex;
+}
+
+/* Si applica al primo elemento della lista "tier-list" */
+.header-profile-info .info .prev-tier .tier-list li:first-of-type() {
+    margin-left: 0;
+}
+
+.header-profile-info .info .prev-tier .tier-list li {
+    line-height: 18px;
+    padding: 0 4px;
+    border-radius: 2px;
+    font-size: 11px;
+    color: #9AA4AF;
+    color: #7B7A8E;
+    background-color: #ebeef1;
+    background-color: #1C1C1F;
+    text-transform: capitalize;
+    margin-left: 4px;
+}
+
+.elo {
+    position: relative;
+}
+
+/* serve solo a mettere position relative a un elemento */
+.relative {
+    position: relative;
+}
+
+.relativo-in-linea {
+    position: relative;
+    display: inline;
+}
+
+.header-inline {
+    display: inline-block;
+}
+
+/* applicata al div che contiene il div che contiene il button faq */
+/* css-h6zen */
+.FAQ {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.FAQ>div>button {
+    width: 24px;
+    height: 24px;
+    background-image: url(https://s-lol-web.op.gg/images/icon/chatbot.gif);
+    background-size: cover;
+    padding: 0;
+    border: none;
+}
+
+/* Span dentro il button faq. Viene fuori quando si clicca il button. */
+.FAQ>div>button>span {
+    font-size: 0;
+}
+
+/* questo span Viene fuori quando si clicca il button. */
+.button-non-cliccato span {
+    font-size: 14px;
+    line-height: 20px;
+    color: #202D37;
+    color: #FFF;
+    display: block;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+/* Menu a tendina in FAQ */
+/* menu-faq = e1efcbgv1 */
+.FAQ .menu-faq+div {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 44px;
+    z-index: 10000000;
+    overflow-y: auto;
+    border-radius: 4px;
+    box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2);
+}
+
+/* Menu a tendina */
+.FAQ>div>button+div {
+    top: 28px!important;
+    padding: 4px 0;
+    left: inherit!important;
+    z-index: 10000003!important;
+    right: 0;
+    box-sizing: border-box;
+    background-color: #FFF;
+    background-color: #31313C;
+    overflow-y: auto;
+}
+
+/* css-w2p1w6 */
+.pulsanti-faq {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    padding: 0px 16px;
+    width: 100%;
+    height: 40px;
+    outline: none;
+    background: #31313C;
+    text-align: left;
+    color: #9E9EB1;
+    white-space: nowrap;
+}
+
+.pulsanti-faq:first-of-type {
+    border-radius: 4px 4px 0px 0px;
+}
+
+.pulsanti-faq:last-of-type {
+    border-radius: 0px 0px 4px 4px;
+}
+
+.FAQ>div>button+div >button {
+    height: 32px;
+    color: #44515C;
+    color: #B7B7C9;
+    background: inherit;
+    border: none;
+}
+
+/* pulsante dark-light mode quando è dark */
+/* css-zx4hnl */
+.dark {
+    width: 24px;
+    height: 24px;
+    background: url(https://s-lol-web.op.gg/images/icon/icon-darkmode.svg);
+}
+
+/* pulsante dark-light mode quando è light */
+.light {
+    width: 24px;
+    height: 24px;
+    background: url(https://s-lol-web.op.gg/images/icon/icon-lightmode.svg);
+}
+
+#divLightMode {
+    position:relative;
+    font-size:0;
+    margin-left:8px;
+}
+
+/* Div principale per le lingue */
+/* css-j405w8 */
+.lingue {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-left: 8px;
+}
+
+/* Applicato al div di class "SelectContainer" */
+.lingue >div:nth-of-type(1) {
+    flex-basis: 24px;
+    width: 24px;
+}
+
+/* Applicato al div che contiene l'icona del mondo nella parte delle lingue */
+/* css-652ze2 */
+.mondo {
+    font-size: 12px;
+    line-height: 16px;
+    position: absolute;
+    visibility: hidden;
+}
+
+.mondo:after {
+    position: absolute;
+    content: "";
+    top: 50%;
+    right: 15px;
+    width: 0;
+    height: 0;
+    border: 5px solid transparent;
+    border-top-color: #9AA4AF;
+    margin-top: -2.5px;
+}
+
+/* dove c'è scritto "italiano" o la lingua in cui si sta visualizzando */
+/* css-1rolow6 */
+.lingua {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.lingua>div>button {
+    background: none;
+    border: none;
+    padding: 0 23px 0 8px;
+    height: auto;
+}
+
+/* applicata al div che contiene il button FAQ prima di essere cliccato, ma anche al div delle lingue prima di essere cliccato (dove c'è scritto "italiano" o la lingua in cui si sta visualizzando) */
+/* css-17jvkpw */
+.button-non-cliccato {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    height: 40px;
+    border-radius: 4px;
+    text-align: left;
+    box-sizing: border-box;
+    border: 1px solid;
+    border-color: #DBE0E4;
+    border-color: #424254;
+    background: #FFF;
+    background: #31313C;
+    padding: 0 32px 0 16px;
+}
+
+.lingua>div>button>span {
+    color: #C3CBD1;
+    font-size: 12px;
+}
+
+.lingua>div>button:after {
+    right: 5px;
+    margin-top: -2.5px;
+    border-bottom: none;
+    position: absolute;
+    content: "";
+    top: 50%;
+    width: 0;
+    height: 0;
+    border: 5px solid transparent;
+    border-top-color: #C3CBD1;
+}
+
+.lingua>div>button+div {
+    top: 28px!important;
+    padding: 4px 0;
+    width: 136px;
+    height: 244px;
+    left: inherit!important;
+    z-index: 10000003!important;
+    right: 0;
+    box-sizing: border-box;
+    background-color: #FFF;
+    background-color: #31313C;
+    overflow-y: auto;
+}
+
+/* css-h5v7o4 */
+.login {
+    margin: 0 16px;
+    display: flex;
+    align-items: center;
+}
+
+/* css-6c6v7u */
+.dentro-login {
+    display: block;
+    padding: 4px 16px;
+    line-height: 18px;
+    font-size: 12px;
+    background-color: #5383E8;
+    color: #FFF;
+    border-radius: 4px;
+    white-space: nowrap;
+}
+
+#footer {
+    min-width: 1080px;
+    margin-top: 48px;
+    padding: 48px 0;
+    background: #ebeef1;
+    background: #1C1C1F;
+}
+
+.footer-class1 >div {
+    width: 1080px;
+    margin: 0 auto;
+}
+
+/* css-x4napu */
+.footer-class1 {
+    min-width: 1080px;
+    margin-top: 48px;
+    padding: 48px 0;
+    background: #ebeef1;
+    background: #1C1C1F;
+}
+
+/* Si applica a entrambe le section del footer */
+#footer section {
+    display: flex;
+    justify-content: space-between;
+}
+
+#footer section:first-of-type .title {
+    margin-left: 0;
+}
+
+/* Applicato a tanti elementi .title nel footer */
+#footer .title {
+    font-weight: bold;
+    font-size: 14px;
+    color: #202D37;
+    color: #FFF;
+    padding-bottom: 16px;
+    display: block;
+}
+
+/* A:first-of-type si applica a tutti gli elementi A che sono i primi elementi A del proprio genitore. 
+   Dunque questo selettore si applica a tutti i figli diretti della prima section del footer. */
+#footer section:first-of-type >* {
+    margin-left: 12px;
+}
+
+#footer section:first-of-type nav {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+/* Si applica a una section di classe footer--bottom contenuta nel footer */
+#footer section.footer--bottom {
+    margin-top: 24px;
+    padding-top: 24px;
+    border-top: 1px solid;
+    border-color: #DBE0E4;
+    border-color: #424254;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 16px;
+    color: #9AA4AF;
+    color: #7B7A8E;
+}
+
+/* Si applica a un elemento di classe footer--bottom contenuto nel footer */
+#footer .footer--bottom {
+    font-size: 12px;
+    line-height: 16px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-class1 section.footer--bottom .wrapper {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+#footer section.footer--bottom nav {
+    display: flex;
+    flex-basis: auto;
+}
+
+#footer section.footer--bottom nav button:first-of-type, #footer section.footer--bottom nav a:first-of-type {
+    margin-left: 0;
+}
+
+#footer section.footer--bottom nav button, #footer section.footer--bottom nav a {
+    vertical-align: bottom;
+    width: 24px;
+    height: 24px;
+    margin-left: 12px;
+    display: inline-block;
+}
+
+#footer .footer--bottom a {
+    font-size: 12px;
+}
+
+#footer button, #footer a {
+    text-align: left;
+    font-size: 14px;
+    color: #758592;
+    color: #9E9EB1;
+}
+
+#wikipediaToggle {
+    height: 25px;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    font-size: 20px;
+}
+
+#wikipediaAPI {
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 40px;
+    background-color: #9AA4AF;
+    color:black;
+}
+
+.articleTitle {
+    font-size: 30px;
+}
+
+.url {
+    color: blue;
+}
+
+.thumbnail {
+    height: 500px;
+    width: 500px;
+}
